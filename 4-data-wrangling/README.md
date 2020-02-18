@@ -2,8 +2,13 @@
 
 ## Exercises
 
-1. Take [this short, interactive regex tutorial](https://regexone.com/). Done.
-2. Various regex exercises.
+### Exercise 1
+
+Take [this short, interactive regex tutorial](https://regexone.com/). Done.
+
+### Exercise 2
+
+Various regex exercises.
 
 Directory: `usr/share/dict/words`
 
@@ -43,4 +48,6 @@ Command: ?
 
 Notes: ?
 
-3. In-place substitution question.
+### Exercise 3
+
+In-place substitution question.
