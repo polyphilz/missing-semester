@@ -34,4 +34,55 @@ Command: `git blame _config.yml | rg collections: | sed -E 's/^(.{8}).*$/\1/' | 
 
 ### Exercise 3
 
-IP.
+Task: Add a file, commit it, make some other commits after that and then purge that original file from history.
+
+Commands:
+
+```
+touch ex3.txt
+
+echo "Content" >> ex3.txt
+
+git add .
+git commit -m "Added file that will be deleted"
+
+...did some more commits here...
+
+git filter-branch --force --index-filter \
+  "git rm --cached --ignore-unmatch 6-git/ex3.txt" \
+  --prune-empty --tag-name-filter cat -- --all
+```
+
+### Exercise 4
+
+Just used the ms-website/ repository I cloned (class website on GitHub); modified `404.html`.
+
+#### Exercise 4 - Task 1
+
+Task: Run `git stash` and record the output
+
+Answer: `Saved working directory and index state WIP on master: d1107eb Merge branch 'J16053/patch-1'
+
+#### Exercise 4 - Task 2
+
+Task: Run `git log --all --oneline` and record the output.
+
+Answer: The top line is `694812a (refs/stash) WIP on master: d1107eb Merge branch 'J16053/patch-1'`
+
+#### Exercise 4 - Task 3
+
+Task: Run `git stash pop` to undo what you did with `git stash` and note a scenario this may be useful.
+
+Answer: Let's say I'm working on a quick bug fix but realize I may be going down a dead-end. I `git stash` my work and go down a different path instead. I later realize that the 2nd approach is a no-go but I can actually tweak my first approach to get it to work. I run `git stash pop` to restore the initial approach, and go on from there.
+
+### Exercise 5
+
+Done. `git config --global alias.graph 'log --all --graph --decorate --oneline'`
+
+### Exercise 6
+
+Skipped.
+
+### Exercise 7
+
+Skipped.
