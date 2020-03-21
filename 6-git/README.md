@@ -85,4 +85,4 @@ Skipped.
 
 ### Exercise 7
 
-Skipped.
+Submitted a pull request [here](https://github.com/missing-semester/missing-semester/pull/27).
