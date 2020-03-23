@@ -76,3 +76,5 @@ Skipped.
 #### Exercise 4 - Task 4
 
 Task: Sign a Git commit with `git commit -C`, then verify the signature on the commit with `git show --show-signature`.
+
+Done.
